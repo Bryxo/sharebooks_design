@@ -1,0 +1,66 @@
+@import '../catalog_auth/catalog_auth.scss';
+@import '../book_description/book_description.scss';
+@import '../index/variables.scss';
+@import '../index/index.scss';
+
+.notFavorite {
+    background-color: #C44536;
+    &:hover {
+        background-color:  #C44536;
+    }
+    &:hover::before {
+        content: "Добавить из избранное";
+        position: absolute;
+        z-index: 3;
+        bottom: 100%;
+        left: 50%;
+        padding: 10px 35px;
+        transform: translateX(-50%);
+        background-color: rgba($button-color, 0.8);
+        color: $main-color;
+        border-radius: 10px;
+        font-size: 14px;
+        -webkit-animation-name: fadeIn;
+                animation-name: fadeIn;
+        -webkit-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+        opacity: 0;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+}
+
+.isFavorite {
+    background-color: transparent;
+    color:  #C44536;
+    border: 1px solid #C44536;
+    border-radius: 10px;
+    position: relative;
+    &:hover {
+        background-color:  transparent;
+    }
+    &:hover::before {
+        content: "Удалить из избранного";
+        position: absolute;
+        z-index: 3;
+        bottom: 100%;
+        left: 50%;
+        padding: 10px 35px;
+        transform: translateX(-50%);
+        background-color: rgba(#C44536, 0.8);
+        color: $main-color;
+        border-radius: 10px;
+        font-size: 14px;
+        -webkit-animation-name: fadeIn;
+                animation-name: fadeIn;
+        -webkit-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+        opacity: 0;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+    }
+}

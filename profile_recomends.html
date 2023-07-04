@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/profile_recomends/profile_recomends.css">
+    <title>Sharebooks Профиль-Рекомендации</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="header container">
+                <nav class="nav">
+                    <div class="logo"><a href="/index.html">ShareBooks</a></div class="logo">
+                    <div class="nav_menu">
+                        <div>
+                            <a href="/index_auth.html"> <span>Главная</span></a>
+                        </div>
+                        <div>
+                            <a href="/about.html"> <span>О проекте</span></a>
+                        </div>
+                        <div>
+                            <a href="/catalog_auth.html"> <span>Каталог</span></a>
+                        </div>
+                        <div>
+                            <a href="/profile.html"><span class="current-page">Профиль</span></a>
+                        </div>
+                    </div>
+                    <button id="mainEntry" class="MainEntryButton" onclick="document.location='index.html'">
+                        <!-- назначить отмену авторизации -->Выход</a></button>
+                </nav>
+            </header>
+            <div class="menu_box--color">
+                <div class="menu_box container">
+                    <search class="search">
+                        <form class="search_form">
+                            <input class="search_input" type="text" placeholder="Введите запрос">
+                            <button class="search_button" type="submit"><img
+                                    src="/styles/catalog/catalog_img/icon_search.png" alt=""></button>
+                        </form>
+                    </search>
+                </div>
+            </div> <!-- menu_box--color -->
+            <main class="content">
+                <div class="profile_box--color">
+                    <div class="profile_item container">
+                        <div class="profile_info">
+                            <div class="profile_info_userName">`USER`
+                                <p>В обществе с `Дата регистрации`</p>
+                            </div>
+                            <div class="profile_info_picture" alt="profile image">
+                                <img src="/styles/profile/default_avatar.png" alt="">
+                            </div>
+                            <div class="profile_info_description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Earum
+                                dicta maiores alias, dolorum, dolorem ab explicabo ipsam ipsum sint exercitationem
+                                ducimus
+                                aliquam dolores laudantium unde, odio modi labore veritatis quis.</div>
+                        </div>
+                        <div class="profile_buttons">
+                            <button class="profile_buttons_favorits"
+                                onclick="document.location='profile_favorits.html'">
+                                <span>Посмотреть избранное</span></button>
+                            <button class="profile_buttons_in_recomends">
+                                <span>Посмотреть рекомендации</span></button>
+                        </div>
+                    </div>
+                </div> <!-- profile_box--color -->
+                <div class="catalog_box">
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits notFavorite">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits notFavorite">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits notFavorite">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits notFavorite">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits notFavorite">В избранное</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_pictures" alt="book image"> <img
+                                src="/books/Conan_Doil/Prikluchenie_Sherlocka_Holmsa/sherlokl.png" alt=""></div>
+                        <div class="catalog_item_structure">
+                            <p class="catalog_item_title">Вино из одуванчиков</p>
+                            <p class="catalog_item_author">Конан Дойл</p>
+                            <p class="catalog_item_favoriteStats"> в избранном у Х читателей</p>
+                            <p class="catalog_item_description"><a href="book_description_auth.html">
+                                    Эта книга похожа на гербарий, в котором каждый листок свидетельствует о беспечально
+                                    прожитом дне. Эта книга <span>...Подробнее</span></a>
+                            </p>
+                            <button class="catalog_item_in_favorits isFavorite">В избранном</button>
+                        </div>
+                    </div>
+                </div> <!-- catalog_box -->
+                <div class="load_button">
+                    <button><span>Ещё книги...</span> </button>
+                </div>
+            </main>
+        </div>
+        <footer class="footer container">
+            <div class="footer_midlle">
+                <h2><a href="index.html">ShareBooks &copy 2023</a></h2>
+                <div class="social">
+                    <a class="telegramm" target="_blank" href="https://t.me/+or8CNTHRjYo0YmRi">
+                        <img src="/styles/index/index_img/icon-telegram.png" alt="telegramm"> </a>
+                    <a class="vk" target="_blank" href="https://vk.com"> <img src="/styles/index/index_img/icon-vk.png"
+                            alt="VK"></a>
+                    <a class="instagram" target="_blank" href="#"><img src="/styles/index/index_img/icon_instagram.png"
+                            alt="instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

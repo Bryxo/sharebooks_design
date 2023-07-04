@@ -1,0 +1,252 @@
+@import '../index/index.scss';
+
+.header {
+  margin-bottom: 60px;
+}
+.nav {
+  justify-content: flex-start;
+}
+.nav_menu {
+  margin-left: 20%;
+  @media (max-width: 768px) {
+    margin: 0;
+  }  
+
+}
+.authorization {
+
+&_box {
+    display: flex;
+    width: 100%;
+    @media (max-width: 768px) {
+      margin: 0;
+      flex-direction: column;
+      align-items: center;
+    } 
+  }
+  &_left {
+    position: relative;
+    height: 830px;
+    width: 40%;
+    @media (max-width: 768px) {
+      height: 200px;
+      width:80%;
+      margin-bottom: 50px;
+    }  
+    & > p {
+      position: relative;
+      z-index: 1;
+      & a {
+        color: $main-color;
+        text-decoration: underline;
+        transition: all 0.5s ease;
+        &:hover {
+          display: inline-block;
+          transform: scale(1.2);
+        }
+      }
+    }
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      @media (max-width: 768px) {
+        border-radius: 20px;
+    }  
+
+    }
+  }   
+  &_text {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $button-color;
+    margin-top: 250px;
+    @media (max-width: 768px) {
+      margin-top: 50px;
+    } 
+    @media (max-width: 400px) {
+      font-size: 24px;
+    } 
+
+
+  }
+  &_passRecovery {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $button-color;
+    margin-top: 210px;
+    @media (max-width: 768px) {
+      margin-top: 50px;
+    } 
+  }
+  &_right {
+      position: relative;
+      width:50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding:0px 0px 50px 150px;
+      @media (max-width: 768px) {
+        padding: 0px;
+        width: 80%;
+      }  
+      & img {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        transform: scale(1.2);
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+    & form {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+      & input {
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid rgba(25, 114, 120, 0.40);
+        background: linear-gradient(90deg, rgba(25, 114, 120, 0.32) 0%, rgba(25, 107, 120, 0.16) 100%);
+        -webkit-backdrop-filter: blur(2px);
+                backdrop-filter: blur(2px);
+        font-size: 20px;
+        font-family: $font-family;
+        color: $main-font-color;
+        &:focus {
+          border: none;
+          outline: none;
+          box-shadow: 0 0 0 2px #37c3be;
+        }
+      }
+    }
+  }
+
+  &_Email {
+    margin-bottom: 50px;
+    & label {
+      display: inline-block;
+      color: $button-color;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  &_password {
+    margin-bottom: 50px;
+    & label {
+      display: inline-block;
+      color: $button-color;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  &_remember-me {
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    height: 45px;
+
+    & input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+        position: relative;
+        height: 20px;
+        &:focus {
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        background-color: $main-color; // Фоновый цвет для области галочки
+        border:$button-color solid 1px;
+        border-radius: 3px;
+      }
+      &:checked::before {
+        background-color:  #ebbfa5; // Фоновый цвет для области галочки при выборе
+      }
+      &:checked::after {
+        content: url('/styles/authorization/authorization_img/Page1.svg');
+        position: absolute;
+        top: 3px;
+        left: -2px;
+        transform: scale(1.8);
+      }
+
+      & label {
+        display: inline-block;
+        color: $button-color;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    & label {
+      color: $button-color;
+      font-size: 14px;
+    }
+  }
+  &_button{
+    cursor: pointer;
+    font-family: $font-family;
+    text-align: center;
+    font-size: 20px; 
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    background: $button-color;
+    color: $main-color;
+    border: none;
+    margin-bottom: 50px;
+    opacity: 1;
+    &:hover {
+        background: linear-gradient(90deg, rgba(25, 114, 120, 0.32) 0%, rgba(25, 107, 120, 0.16) 100%);
+        color: $button-color;
+        opacity: 1;
+        box-shadow: $box_shadow;
+    }
+  }
+}
+
+.registration {
+  & p {
+    color: $button-color;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  &_button {
+    font-family: $font-family;
+    text-align: center;
+    font-size: 20px; 
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    transition: all 0.9s ease;
+    background: linear-gradient(90deg, rgba(25, 114, 120, 0.32) 0%, rgba(25, 107, 120, 0.16) 100%);
+    color: $button-color;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background: $button-color;
+      color: $main-color;
+      border:solid 1px #197278;
+      box-shadow: $box_shadow;
+    }
+  }
+}

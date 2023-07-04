@@ -1,0 +1,69 @@
+@import '../index/index.scss';
+@import '../book_description/book_description.scss';
+@import '../catalog/catalog.scss';
+
+
+.menu_box {
+    justify-content: flex-end;
+
+    margin-bottom: 60px;
+}
+.search {
+    margin: 0;
+}
+.content {
+    position: relative;
+    @media (max-width: 1080px) {
+        display: flex;
+    }  
+
+
+}
+.content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+        font-size: 40px;
+        max-width: 400px;
+        text-align: center;
+    }
+    & div {
+        
+    }
+    & p {
+        max-width: 400px;
+        margin-bottom: 50px;
+        padding: 10px;
+        text-align: justify;
+    }
+    & p:not(:first-of-type) {
+        margin-bottom: 15px;
+    }
+}
+.content_right {
+&_img {
+    position: absolute;
+    bottom:0px;
+    right: 0;
+    width: 55%;
+    height: auto;
+        @media (max-width: 1080px) {
+            opacity: 0.2;
+            right: 22%;
+        } 
+        @media (max-width: 768px) {
+            position: absolute;
+            width:105%;
+           top: 380px;
+           right: 0;
+        }   
+    }
+}
+
+
+.content_button {
+width: 380px;
+margin: 10px;
+}

@@ -1,0 +1,24 @@
+@import '../catalog_auth/catalog_auth.scss';
+@import '../profile/profile.scss';
+
+.content {
+   display: block; 
+}
+.profile {
+    &_box--color {
+    margin-bottom: 50px;
+    }
+}
+.profile_buttons_in_favorits {
+    cursor:default;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
+    font-weight: 600; 
+    width: 210px;
+    height: 40px;
+    border-radius: 10px;
+    background: transparent;
+    color: $favorite-color;
+    border: 1px solid $favorite-color; 
+    margin-right: 90px;
+}

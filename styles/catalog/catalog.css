@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import '/styles/index/index.css';
+.content {
+  display: block;
+}
+
+.menu_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .menu_box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.menu_box--color {
+  background-color: #E0CFC6;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.menu__items {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.menu__items:after {
+  content: url(/styles/catalog/catalog_img/Vector_down.png);
+  position: absolute;
+  right: -1em;
+  top: 2px;
+  transition: all 0.3s ease-in-out;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+.menu__items:hover {
+  color: #772E25;
+}
+.menu__items:focus {
+  outline: none;
+}
+.menu__item {
+  position: relative;
+}
+.menu__item--has-dropdown:hover {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px 2px rgba(90, 74, 74, 0.83);
+}
+.menu__item--has-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  width: auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #E0CFC6;
+  border-radius: 5px;
+}
+.menu__item--has-dropdown .dropdown-menu div:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.menu__item--has-dropdown .dropdown-menu div:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.menu__item--has-dropdown .dropdown-menu__item {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  padding: 1px 2px;
+  text-decoration: none;
+  background-color: #E0CFC6;
+}
+.menu__item--has-dropdown .dropdown-menu__item:hover {
+  border-radius: 5px;
+  background-color: rgba(25, 114, 120, 0.35);
+  cursor: pointer;
+}
+
+details[open] .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
+}
+
+details:not([open]) .dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.7s ease-in-out; /* заменяем на следующие две строки */
+  transition-property: opacity, visibility;
+  transition-duration: 0.7s;
+}
+
+details[open] .menu__items::after {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-180deg);
+  position: absolute;
+  right: -1em;
+  top: 2px;
+}
+
+.search {
+  max-width: 165px;
+  border-radius: 10px;
+  overflow: inherit;
+}
+.search_form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EDDDD4;
+  border-radius: 10px;
+}
+.search_input[type=text] {
+  border: none;
+  max-width: calc(100% - 50px);
+  font-size: 14px;
+  margin: 3px 10px;
+  background-color: #EDDDD4;
+  color: #772E25;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+.search_input[type=text]:focus {
+  outline: none;
+}
+.search_input[type=text]::-moz-placeholder {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 500;
+  color: rgba(119, 46, 37, 0.35);
+}
+.search_input[type=text]::placeholder {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 500;
+  color: rgba(119, 46, 37, 0.35);
+}
+.search_button {
+  max-width: 80px;
+  border: none;
+  background-color: #EDDDD4;
+  border-radius: 10px;
+}
+.search_button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.catalog_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 65px 10px;
+  margin-bottom: 100px;
+}
+.catalog_box div.catalog_item:nth-child(odd) {
+  background-color: rgba(224, 207, 198, 0.6);
+}
+.catalog_box div.catalog_item:nth-child(even) {
+  background-color: rgba(25, 114, 120, 0.35);
+}
+.catalog_box div.catalog_item:nth-child(even) p.catalog_item_favoriteStats {
+  color: #EDDDD4;
+}
+.catalog_box div.catalog_item:nth-child(even) span {
+  color: #EDDDD4;
+}
+
+.catalog_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 413px;
+  height: auto;
+  padding: 10px;
+  border-radius: 30px;
+}
+.catalog_item_pictures {
+  max-width: 170px;
+  position: relative;
+  top: 40px;
+}
+.catalog_item_pictures img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 100px 100px 0px 0px;
+  box-shadow: 0 4px 15px 2px rgba(90, 74, 74, 0.83);
+  transition: all 0.2s ease-in-out;
+}
+.catalog_item_pictures img:hover {
+  transform: scale(1.2);
+}
+.catalog_item_structure {
+  margin-left: 20px;
+  max-width: 203px;
+}
+.catalog_item_structure span {
+  color: rgba(25, 114, 120, 0.42);
+}
+.catalog_item_title {
+  color: #283D3B;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.catalog_item_author {
+  color: #197278;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.catalog_item_favoriteStats {
+  color: rgba(25, 114, 120, 0.42);
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.catalog_item_description {
+  color: #283D3B;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 27px;
+  max-width: 175px;
+}
+.catalog_item_in_favorits {
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: #EDDDD4;
+  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(196, 69, 54, 0.4);
+  border: none;
+  border-radius: 10px;
+  min-width: 175px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.catalog_item_in_favorits:hover {
+  transform: scale(1.1);
+  background-color: rgba(196, 69, 54, 0.6);
+  box-shadow: 0 4px 15px 2px rgba(90, 74, 74, 0.83);
+}
+.catalog_item_in_favorits:active {
+  color: #772E25;
+}
+
+.load_button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.load_button button {
+  font-family: "Alegreya Sans SC", sans-serif;
+  background-color: rgba(25, 114, 120, 0.42);
+  cursor: pointer;
+  border: none;
+  color: #283D3B;
+  border-radius: 10px;
+  padding: 10px 50px;
+  transition: all 0.2s ease-in-out;
+}
+.load_button button:hover {
+  transform: scale(1.1);
+  background-color: rgba(25, 114, 120, 0.6);
+  box-shadow: 0 4px 15px 2px rgba(90, 74, 74, 0.83);
+}/*# sourceMappingURL=catalog.css.map */
